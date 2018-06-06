@@ -1,0 +1,46 @@
+<div class="row" style="padding-top: 40px;">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-4">
+    <app-carousel></app-carousel>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-4">
+    <app-crear-comida (comidaCreada)="agregarComida($event)"></app-crear-comida>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <div *ngFor="let comida of arregloComidas" class="col-sm-2">
+      <button (click)="seleccionarComida(comida)">
+        {{comida.nombrePlato}}
+      </button>
+    </div>
+    <br>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+<br>
+<div class="row" style="padding-top: 100px;">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-4">
+    <app-crear-ingrediente (ingredienteCreado)="agregarIngrediente($event)"></app-crear-ingrediente>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-4">
+    <p-card title="{{comidaSeleccionada.nombrePlato}}" [style]="{width: '360px'}">
+      <div>{{comidaSeleccionada.descripcionPlato}}</div>
+    </p-card>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+
+<div class="row" style="padding-top: 100px;">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <app-tabla-ingredientes [datosTablaIngredientes]="comidaSeleccionada.ingredientes"></app-tabla-ingredientes>
+  </div>
+  <div class="col-sm-2"></div>
+</div>

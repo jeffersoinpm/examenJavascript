@@ -1,0 +1,88 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h3>Agregar Ingrediente</h3>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Nombre del Ingrediente:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="nombreIngrediente" type="text" size="20" pInputText name="nombreIngrediente"
+             [(ngModel)]="ingrediente.nombreIngrediente">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Cantidad</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="cantidad" type="text" size="20" pInputText name="cantidad" [(ngModel)]="ingrediente.cantidad">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Descripción de la Preparación</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="descripcionPreparacion" type="text" size="20" pInputText name="descripcionPreparacion"
+             [(ngModel)]="ingrediente.descripcionPreparacion">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Es opcional:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="opcional" type="text" size="20" pInputText name="opcional" [(ngModel)]="ingrediente.opcional">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Tipo de Ingrediente:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="tipoIngrediente" type="text" size="20" pInputText name="tipoIngrediente"
+             [(ngModel)]="ingrediente.tipoIngrediente">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <label>Necesita Refrigeración:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <input id="necesitaRefrigeracion" type="text" size="20" pInputText name="necesitaRefrigeracion"
+             [(ngModel)]="ingrediente.necesitaRefrigeracion">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <button pButton type="button" label="Agregar Ingrediente" class="ui-button-success" (click)="guardarIngrediente()"></button>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>

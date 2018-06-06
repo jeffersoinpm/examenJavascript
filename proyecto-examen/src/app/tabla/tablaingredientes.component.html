@@ -1,0 +1,22 @@
+<p-table [value]="datosTablaIngredientes">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Nombre Ingrediente</th>
+      <th>Cantidad</th>
+      <th>Descripcion de la Preparación</th>
+      <th>Opcional</th>
+      <th>Tipo de Ingrediente</th>
+      <th>Necesita Refrigeración</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-datosTablaIngredientes>
+    <tr>
+      <td>{{datosTablaIngredientes.nombreIngrediente}}</td>
+      <td>{{datosTablaIngredientes.cantidad}}</td>
+      <td>{{datosTablaIngredientes.descripcionPreparacion}}</td>
+      <td>{{datosTablaIngredientes.opcional}}</td>
+      <td>{{datosTablaIngredientes.tipoIngrediente}}</td>
+      <td>{{datosTablaIngredientes.necesitaRefrigeracion}}</td>
+    </tr>
+  </ng-template>
+</p-table>

@@ -1,0 +1,86 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h3>Agregar Comida</h3>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <label style="padding-top: 20px">Nombre Plato:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <mat-form-field style="width: 120px">
+        <input matInput placeholder="nombre plato" name="nombre" [(ngModel)]="comida.nombrePlato">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <label style="padding-top: 20px">Descripción Plato:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <mat-form-field style="width: 120px">
+        <input matInput placeholder="descripción plato" name="descripcionPlato" [(ngModel)]="comida.descripcionPlato">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <label style="padding-top: 20px">Nacionalidad:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <mat-form-field style="width: 120px">
+        <input matInput placeholder="nacionalidad" name="nacionalidad" [(ngModel)]="comida.nacionalidad">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <label style="padding-top: 20px">Número Personas</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <mat-form-field style="width: 120px">
+        <input matInput placeholder="número personas" name="numeroPersonas" [(ngModel)]="comida.numeroPersonas">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <label style="padding-top: 20px">Plato Picante:</label>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <mat-form-field style="width: 120px">
+        <input matInput placeholder="el plato es picante" name="picante" [(ngModel)]="comida.picante">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <button mat-button color="primary" class="button" (click)="guardarComida()">Agregar Comida</button>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>
